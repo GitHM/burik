@@ -112,3 +112,24 @@
           colors.orange, colors.orange, colors.orange,
           colors.orange, colors.grey, colors.orange)
 )
+
+#let full_cube = (
+  u : (colors.white, colors.white, colors.white,
+        colors.white, colors.white, colors.white,
+        colors.white, colors.white, colors.white),
+  d : (colors.yellow, colors.yellow, colors.yellow,
+          colors.yellow, colors.yellow, colors.yellow,
+          colors.yellow, colors.yellow, colors.yellow),
+  f : (colors.green, colors.green, colors.green,
+          colors.green, colors.green, colors.green,
+          colors.green, colors.green, colors.green),
+  b : (colors.blue, colors.blue, colors.blue,
+          colors.blue, colors.blue, colors.blue,
+          colors.blue, colors.blue, colors.blue),
+  r : (colors.red, colors.red, colors.red,
+          colors.red, colors.red, colors.red,
+          colors.red, colors.red, colors.red),
+  l : (colors.orange, colors.orange, orange,
+          orange, orange, orange,
+          orange, orange, orange)
+)

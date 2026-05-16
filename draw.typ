@@ -318,3 +318,21 @@
   ]
 }
 
+#let tsc = (algo) => {
+  let moves = algo.split(" ")
+  let inverted_moves = invert_algo(moves)
+  let my_cube = full_cube
+  my_cube.u.at(0) = colors.grey
+  let initial_cube = apply_sequence(full_cube, inverted_moves)
+
+  let left_vue_cube = apply_sequence(initial_cube, ("y'",))
+
+  box(width:5cm)[
+    #set align(center)
+    #canvas(draw_3d_cube(initial_cube, 0.7cm, 0cm))
+    #box(width:4cm)[
+    #raw(algo)]
+    #v(1cm)
+  ]
+}
+

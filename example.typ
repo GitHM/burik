@@ -90,3 +90,9 @@
 #ols("U F' U2 F R U' R'")
 #ols("M U R U' R' U' M'")
 #ols("R' F R2 U R' U' F'") 
+
+#pagebreak()
+
+= TSC tree style corners examples
+#tsc("L D' L' U' L D L' U")
+ 
