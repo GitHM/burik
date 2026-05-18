@@ -58,6 +58,7 @@
 = F2L examples
 #f2l("R U R'")
 #f2l("U R U' R'")
+#f2l("U R U' R' U R U' R' U R U' R'")
 #f2l("F R' F' R")
 #f2l("U' R U2 R' U R U R' ")
 #f2l("R2 u R U R' U' u' R' U R'")
@@ -89,10 +90,12 @@
 #ols("R' F R F'")
 #ols("U F' U2 F R U' R'")
 #ols("M U R U' R' U' M'")
-#ols("R' F R2 U R' U' F'") 
+#ols("R' F R2 U R' U' F'")
 
 #pagebreak()
 
 = TSC tree style corners examples
-#tsc("L D' L' U' L D L' U")
- 
+#tsc("")
+#tsc("L D' L' U L D L' U'")
+#tsc("R' D R U' R' D' R U")
+#tsc("R' D R2 D' R' U2 R D R' U2 R' D' R")
