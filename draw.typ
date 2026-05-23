@@ -258,7 +258,7 @@
   )
 }
 
-#let draw_3style_cube(cube, size, spacing, vangle: 15deg, hangle: 40deg) = {
+#let draw_3d_3style_cube(cube, size, spacing, vangle: 15deg, hangle: 40deg) = {
   let delta = 3 * size + 2 * spacing
   let d_mirror = 0.8 * delta
   let origin_f = (x: 0cm, y: 0cm)
@@ -277,7 +277,7 @@
   )
   let origin_d_mirror = (
     x: 0cm,
-    y: -delta - 1.8 * d_mirror * calc.sin(vangle),
+    y: -delta - 2 * d_mirror * calc.sin(vangle),
   )
   draw_3d_face(
     cube.l,
@@ -435,9 +435,9 @@
   let moves = algo.split(" ")
   let inverted_moves = invert_algo(moves)
   let initial_cube = apply_sequence(pll_cube, inverted_moves)
-  box(width: 6cm)[
+  box(width: 9cm)[
     #set align(center)
-    #canvas(draw_3style_cube(initial_cube, 0.7cm, 0cm))
+    #canvas(draw_3d_3style_cube(initial_cube, 0.75cm, 0cm))
     #box(width: 4cm)[
       #raw(algo)]
     #v(1cm)
